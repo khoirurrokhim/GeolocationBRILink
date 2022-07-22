@@ -1,0 +1,2 @@
+rootProject.name = "Geolocation BRI Link"
+include ':app'
