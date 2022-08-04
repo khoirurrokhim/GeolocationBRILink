@@ -8,9 +8,9 @@ plugins {
 // def localPropertiesFile = rootProject.file("local.properties")
 // def localProperties = new Properties()
 // localProperties.load(new FileInputStream(localPropertiesFile))
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-def googleMapApiKey = properties.getProperty('apiKey')
+// Properties properties = new Properties()
+// properties.load(project.rootProject.file('local.properties').newDataInputStream())
+// def googleMapApiKey = properties.getProperty('apiKey')
 
 android {
     compileSdkVersion 31
@@ -24,7 +24,14 @@ android {
         versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        // buildConfigField "String", "API_KEY", localProperties['apiKey']
+
+        // Load credentials.
+        def properties = new Properties()
+        file("../local.properties").withInputStream { properties.load(it) }
+
+        // Share the key with your `AndroidManifest.xml`
+        manifestPlaceholders = [ googleMapsApiKey:"${properties.getProperty('google.maps_api_key')}"]
+
         configurations.all {
             resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
         }
@@ -34,6 +41,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            testCoverageEnabled true
         }
     }
     compileOptions {
