@@ -21,7 +21,7 @@
         android:layout_below="@id/splash_logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="BRILink Locator"
+        android:text="@string/app_name2"
         android:textColor="@color/white"
         android:fontFamily="@font/r_bold"
         android:textSize="30sp" />
@@ -33,7 +33,7 @@
         android:layout_below="@id/app_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25sp"
-        android:text="temukan BRI Link dimana saja \nyang anda inginkan"
+        android:text="@string/subtitle"
         android:textAlignment="center"
         android:textColor="@color/sub"
         android:textSize="14dp"
@@ -49,6 +49,7 @@
         android:width="186dp"
         android:height="46dp"
         android:background="@drawable/button_shape"
-        android:text="Mulai"
+        android:text="@string/btn_splash"
+        android:fontFamily="@font/r_medium"
         android:textColor="@color/white" />
 </RelativeLayout>
