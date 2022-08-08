@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/splash" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="BRILink Locator"
+        android:textColor="@color/white"
+        android:fontFamily="@font/r_bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/sub_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:text="temukan BRI Link dimana saja \nyang anda inginkan"
+        android:textAlignment="center"
+        android:textColor="@color/sub"
+        android:textSize="14dp"
+        android:fontFamily="@font/r_regular"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:width="186dp"
+        android:height="46dp"
+        android:background="@drawable/button_shape"
+        android:text="Mulai"
+        android:textColor="@color/white" />
+</RelativeLayout>
