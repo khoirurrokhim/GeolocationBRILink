@@ -5,13 +5,6 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
-// def localPropertiesFile = rootProject.file("local.properties")
-// def localProperties = new Properties()
-// localProperties.load(new FileInputStream(localPropertiesFile))
-// Properties properties = new Properties()
-// properties.load(project.rootProject.file('local.properties').newDataInputStream())
-// def googleMapApiKey = properties.getProperty('apiKey')
-
 android {
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
@@ -71,4 +64,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation platform('com.google.firebase:firebase-bom:30.3.1')
     implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
 }

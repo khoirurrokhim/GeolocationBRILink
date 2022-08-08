@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Geolocation BRI Link</string>
+    <string name="app_name2">BRILink Locator</string>
     <string name="title_activity_maps">Map</string>
+    <string name="subtitle">temukan BRI Link dimana saja \nyang anda inginkan</string>
+    <string name="btn_splash">Mulai</string>
+    <string name="login">Login dengan Google</string>
 </resources>
