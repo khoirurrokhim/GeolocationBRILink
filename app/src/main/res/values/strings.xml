@@ -5,4 +5,9 @@
     <string name="subtitle">temukan BRI Link dimana saja \nyang anda inginkan</string>
     <string name="btn_splash">Mulai</string>
     <string name="login">Login dengan Google</string>
+    <string name="name">Khoirur Rokhim</string>
+    <string name="email">ochiim101@gmail.com</string>
+    <string name="content_logout">Logout Button</string>
+    <string name="content_profile">Profile picture</string>
+    <string name="text_profile">Profile</string>
 </resources>
