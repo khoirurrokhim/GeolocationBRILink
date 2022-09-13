@@ -10,4 +10,5 @@
     <string name="content_logout">Logout Button</string>
     <string name="content_profile">Profile picture</string>
     <string name="text_profile">Profile</string>
+    <string name="content_user_button">user_button</string>
 </resources>

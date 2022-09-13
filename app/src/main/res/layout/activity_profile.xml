@@ -21,21 +21,21 @@
 
     <ImageView
         android:id="@+id/LogoutButton"
-        android:contentDescription="@string/content_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:contentDescription="@string/content_logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fe_logout" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:contentDescription="@string/content_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="144dp"
+        android:contentDescription="@string/content_profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -63,5 +63,49 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar2"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="1dp"
+            android:background="#1E8F78"
+            android:paddingLeft="30dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+            <ImageButton
+                android:id="@+id/users_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom"
+                android:background="#00000000"
+                android:contentDescription="@string/content_user_button"
+                android:visibility="visible"
+                app:srcCompat="@drawable/fe_user__1_" />
+            <ImageButton
+                android:id="@+id/maps"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom"
+                android:background="#00000000"
+                android:contentDescription="@string/content_user_button"
+                android:visibility="visible"
+                app:srcCompat="@drawable/bg_map_btn"
+                />
+        </RelativeLayout>
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
